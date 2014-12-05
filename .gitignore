@@ -12,6 +12,8 @@ test/tmp
 test/version_tmp
 tmp
 
+*_instagram_photos
+
 # YARD artifacts
 .yardoc
 _yardoc
