@@ -6,7 +6,7 @@ require_relative 'json_cleaner'
 
 Dir.chdir(ENV['INSTAUSER'] + '_instagram_photos') do
   Dir.glob("*.json").sort_by do |json|
-    JsonCleaner.clean(Pathname.new(json))['create_time'].to_i
+    JsonCleaner.clean(Pathname.new(json))['created_time'].to_i
   end.each_with_index do |json, index|
     next unless json.length > 10
     json = Pathname.new(json)
